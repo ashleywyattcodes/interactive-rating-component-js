@@ -6,7 +6,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 - #overview 
   - #the-challenge is to create an interactive rating component that allows the user to submit a rating from 1-5, and a pop up saying thank you with their rating will show up afterwards. Javascript will be used to display the hidden pop up message when it is clicked. JS will also be used to make sure that the number that is selected, is added to the next screen to fill in "You selected X out of 5". 
-  -  -[Screenshot] (#screenshot) 
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
