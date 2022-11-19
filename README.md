@@ -6,7 +6,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 - #overview 
   - #the-challenge is to create an interactive rating component that allows the user to submit a rating from 1-5, and a pop up saying thank you with their rating will show up afterwards. Javascript will be used to display the hidden pop up message when it is clicked. JS will also be used to make sure that the number that is selected, is added to the next screen to fill in "You selected X out of 5". 
-  - #screenshot 
+  -[Screenshot] (#screenshot) 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -16,7 +16,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -49,52 +48,39 @@ Users should be able to:
 - JavaScript
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+With this challenge I learned a new way to use the span tag in order to have it interact with JS, to display the specific number the user selects on the "Thank you" page. See example of my code below: 
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+<div class="thank-you hidden">
+    <img src="./images/illustration-thank-you.svg" alt="">
+    <p class="gray">You Selected <span id="rating">5</span> out of 5</p>
+    <h2>Thank you!</h2>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to reach out!</p>
+    <button class="btn-submit" id="rate-again">Rate Again</button>
+  </div>
+
+```
+
+
+This helped me solidify my knowledge on Flex box, selecting multiple elements in css, and utilizing cursor with the value of pointer. See below for an example of my code: 
+```
+.pop-up-box ul li button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: hsl(213, 20%, 22%);
+    color: white;
+    padding-top: 0.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+Another thing I was able to solidify more was using Event Listener for specific actions performed by the user. See example below:
+```
+submitButton.addEventListener("click", () => {
+   thanksContainer.classList.remove("hidden")
+   popUpBox.style.display = "none"
+})
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
