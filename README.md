@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: incredible-zabaione-05e9b9.netlify.app
+- Live Site URL: [incredible-zabaione-05e9b9.netlify.app](https://incredible-zabaione-05e9b9.netlify.app/)
 
 ## My process
 
